@@ -1,0 +1,13 @@
+#use glob syntax
+syntax:glob
+Release\*
+Debug\*
+ipch\*
+*.user
+*.cache
+*.ncb
+*.suo
+*.sdf
+*.opensdf
+
+
