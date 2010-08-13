@@ -19,14 +19,18 @@ public class Program
 		string flavor = @"bin\" + args[0] + @"\";
 		string programFiles32 = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
 		string pseudoDir = Path.Combine(programFiles32, "Pseudo\\");
-		ParsedPath addinDir = new ParsedPath(ScriptEnvironment.ScriptPath.RootAndDirectory + @"..\PseudoUnitTestAddin\").MakeFullPath();
+		ParsedPath addinDir90 = new ParsedPath(ScriptEnvironment.ScriptPath.RootAndDirectory + @"..\PseudoUnitTestAddin90\").MakeFullPath();
+		ParsedPath addinDir100 = new ParsedPath(ScriptEnvironment.ScriptPath.RootAndDirectory + @"..\PseudoUnitTestAddin100\").MakeFullPath();
 		
 		if (!Directory.Exists(pseudoDir))
 			Directory.CreateDirectory(pseudoDir);
 
-		CopyFile(addinDir + flavor, pseudoDir, "PseudoUnitTestAddin.dll");
-		CopyFile(addinDir + flavor, pseudoDir, "PseudoUnitTestAddin.pdb");
-		CopyFile(addinDir, pseudoDir, "PseudoUnitTestAddin.Addin");
+		CopyFile(addinDir90 + flavor, pseudoDir, "PseudoUnitTestAddin90.dll");
+		CopyFile(addinDir90 + flavor, pseudoDir, "PseudoUnitTestAddin90.pdb");
+		CopyFile(addinDir90, pseudoDir, "PseudoUnitTestAddin90.Addin");
+		CopyFile(addinDir100 + flavor, pseudoDir, "PseudoUnitTestAddin100.dll");
+		CopyFile(addinDir100 + flavor, pseudoDir, "PseudoUnitTestAddin100.pdb");
+		CopyFile(addinDir100, pseudoDir, "PseudoUnitTestAddin100.Addin");
 
 		return 0;
 	}

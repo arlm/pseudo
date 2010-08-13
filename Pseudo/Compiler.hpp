@@ -50,7 +50,7 @@
 #else
 
 #ifdef PSEUDO_ALLOW_UNSUPPORTED_COMPILER
-	#pragma message(WARNING: Unsupported compiler! This library has not been tested with this compiler!)
+	#pragma message(WARNING: This library has not been tested with this compiler!)
 #else
 	#error Unsupported compiler!
 #endif
