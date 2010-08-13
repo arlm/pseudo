@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>PseudoUnitTest</ProjectName>
+    <ProjectGuid>{051ABE5D-2767-40EA-9068-14B09FDE2D0C}</ProjectGuid>
+    <RootNamespace>PseudoUnitTest</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Pseudo\Array.hpp" />
+    <ClInclude Include="..\Pseudo\ArrayList.hpp" />
+    <ClInclude Include="..\Pseudo\AutoArrayPtr.hpp" />
+    <ClInclude Include="..\Pseudo\AutoPtr.hpp" />
+    <ClInclude Include="..\Pseudo\BitArray.hpp" />
+    <ClInclude Include="..\Pseudo\CharType.hpp" />
+    <ClInclude Include="..\Pseudo\ComHelp.hpp" />
+    <ClInclude Include="..\Pseudo\Compiler.hpp" />
+    <ClInclude Include="..\Pseudo\ComPtr.hpp" />
+    <ClInclude Include="..\Pseudo\Console.hpp" />
+    <ClInclude Include="..\Pseudo\Convert.hpp" />
+    <ClInclude Include="..\Pseudo\CountedArrayPtr.hpp" />
+    <ClInclude Include="..\Pseudo\CountedPtr.hpp" />
+    <ClInclude Include="..\Pseudo\Dictionary.hpp" />
+    <ClInclude Include="..\Pseudo\Encoding.hpp" />
+    <ClInclude Include="..\Pseudo\Environment.hpp" />
+    <ClInclude Include="..\Pseudo\EventWaitHandle.hpp" />
+    <ClInclude Include="..\Pseudo\Exception.hpp" />
+    <ClInclude Include="..\Pseudo\File.hpp" />
+    <ClInclude Include="..\Pseudo\FileStream.hpp" />
+    <ClInclude Include="..\Pseudo\FileVersionInfo.hpp" />
+    <ClInclude Include="..\Pseudo\Guid.hpp" />
+    <ClInclude Include="..\Pseudo\Interlocked.hpp" />
+    <ClInclude Include="..\Pseudo\Library.hpp" />
+    <ClInclude Include="..\Pseudo\Lock.hpp" />
+    <ClInclude Include="..\Pseudo\Macros.hpp" />
+    <ClInclude Include="..\Pseudo\Math.hpp" />
+    <ClInclude Include="..\Pseudo\NativeMethods.hpp" />
+    <ClInclude Include="..\Pseudo\New.hpp" />
+    <ClInclude Include="..\Pseudo\Path.hpp" />
+    <ClInclude Include="..\Pseudo\Process.hpp" />
+    <ClInclude Include="..\Pseudo\Registry.hpp" />
+    <ClInclude Include="..\Pseudo\RegistryKey.hpp" />
+    <ClInclude Include="..\Pseudo\StackWalk.hpp" />
+    <ClInclude Include="..\Pseudo\Stopwatch.hpp" />
+    <ClInclude Include="..\Pseudo\Stream.hpp" />
+    <ClInclude Include="..\Pseudo\StreamWriter.hpp" />
+    <ClInclude Include="..\Pseudo\String.hpp" />
+    <ClInclude Include="..\Pseudo\StringBuilder.hpp" />
+    <ClInclude Include="..\Pseudo\TextWriter.hpp" />
+    <ClInclude Include="..\Pseudo\Thread.hpp" />
+    <ClInclude Include="..\Pseudo\Timeout.hpp" />
+    <ClInclude Include="..\Pseudo\Trace.hpp" />
+    <ClInclude Include="..\Pseudo\TraceListener.hpp" />
+    <ClInclude Include="..\Pseudo\UnitTest.hpp" />
+    <ClInclude Include="..\Pseudo\ValueType.hpp" />
+    <ClInclude Include="Pseudo\NativeMethods.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="TestArray.hpp" />
+    <ClInclude Include="TestArrayList.hpp" />
+    <ClInclude Include="TestAutoArrayPtr.hpp" />
+    <ClInclude Include="TestAutoPtr.hpp" />
+    <ClInclude Include="TestBitArray.hpp" />
+    <ClInclude Include="TestCharType.hpp" />
+    <ClInclude Include="TestComPtr.hpp" />
+    <ClInclude Include="TestConsole.hpp" />
+    <ClInclude Include="TestConvert.hpp" />
+    <ClInclude Include="TestDictionary.hpp" />
+    <ClInclude Include="TestMath.hpp" />
+    <ClInclude Include="TestNew.hpp" />
+    <ClInclude Include="TestPath.hpp" />
+    <ClInclude Include="TestRegistryKey.hpp" />
+    <ClInclude Include="TestStackWalk.hpp" />
+    <ClInclude Include="TestString.hpp" />
+    <ClInclude Include="TestStringBuilder.hpp" />
+    <ClInclude Include="TestTrace.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Pseudo\ComExports.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Program.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PseudoUnitTest.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

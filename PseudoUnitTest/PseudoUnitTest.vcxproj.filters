@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..%255cPseudo">
+      <UniqueIdentifier>{1f8697e2-6b3f-4325-b1db-044447179c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pseudo">
+      <UniqueIdentifier>{2da15ae7-dfed-4551-bdbe-619324a2a7fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="TestArray.hpp" />
+    <ClInclude Include="TestArrayList.hpp" />
+    <ClInclude Include="TestAutoArrayPtr.hpp" />
+    <ClInclude Include="TestAutoPtr.hpp" />
+    <ClInclude Include="TestBitArray.hpp" />
+    <ClInclude Include="TestCharType.hpp" />
+    <ClInclude Include="TestComPtr.hpp" />
+    <ClInclude Include="TestConsole.hpp" />
+    <ClInclude Include="TestConvert.hpp" />
+    <ClInclude Include="TestDictionary.hpp" />
+    <ClInclude Include="TestMath.hpp" />
+    <ClInclude Include="TestNew.hpp" />
+    <ClInclude Include="TestPath.hpp" />
+    <ClInclude Include="TestRegistryKey.hpp" />
+    <ClInclude Include="TestStackWalk.hpp" />
+    <ClInclude Include="TestString.hpp" />
+    <ClInclude Include="TestStringBuilder.hpp" />
+    <ClInclude Include="TestTrace.hpp" />
+    <ClInclude Include="..\Pseudo\TextWriter.hpp" />
+    <ClInclude Include="..\Pseudo\Array.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\ArrayList.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\AutoArrayPtr.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\AutoPtr.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\BitArray.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\CharType.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\ComHelp.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Compiler.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\ComPtr.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Console.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Convert.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\CountedArrayPtr.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\CountedPtr.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Dictionary.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Encoding.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Environment.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\EventWaitHandle.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Exception.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\File.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\FileStream.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\FileVersionInfo.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Guid.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Interlocked.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Library.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Lock.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Macros.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Math.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="Pseudo\NativeMethods.hpp">
+      <Filter>Pseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\NativeMethods.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\New.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Path.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Process.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Registry.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\RegistryKey.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\StackWalk.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Stopwatch.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Stream.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\StreamWriter.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\String.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\StringBuilder.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Thread.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Timeout.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\Trace.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\TraceListener.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\UnitTest.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Pseudo\ValueType.hpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="..\Pseudo\ComExports.cpp">
+      <Filter>..%255cPseudo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PseudoUnitTest.rc" />
+  </ItemGroup>
+</Project>

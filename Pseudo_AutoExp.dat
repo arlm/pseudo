@@ -1,0 +1,190 @@
+; AutoExp.Dat - Templates for the AutoExp.Dat file for Pseudo
+; Copyright(c) Microsoft Corporation. All Rights Reserved.
+;------------------------------------------------------------------------------
+; 
+; To use this file, cut & paste the entries below into the corresponding
+; sections in "%ProgramFiles%\Microsoft Visual Studio 2008\Common7\Packages\
+; Debugger\AutoExp.dat"
+;
+;------------------------------------------------------------------------------
+
+[AutoExpand]
+
+[Visualizer]
+;------------------------------------------------------------------------------
+; Nails::String
+;------------------------------------------------------------------------------
+
+Nails::String{
+	preview
+	(
+		#(
+			"[", [(*(int *)$e.data.p),i], "] ", [((int *)$e.data.p + 1),su]
+		)
+	)
+	stringview
+	(
+		#(
+			[((int *)$e.data.p + 1),su]
+		)
+	)
+}
+
+;------------------------------------------------------------------------------
+; Nails::StringBuilder
+;------------------------------------------------------------------------------
+
+Nails::StringBuilder{
+	preview
+	(
+		#(
+			"[", [$e.capacity,i], "] ", [$e.data.p,su]
+		)
+	)
+	stringview
+	(
+		#(
+			[$e.data.p,su]
+		)
+	)
+}
+
+;------------------------------------------------------------------------------
+;  Nails::AutoPtr
+;------------------------------------------------------------------------------
+
+Nails::AutoPtr<*>{
+	preview
+	( 
+		#(	
+			"AutoPtr ", (($T1 *)$e.p)
+		 )
+	)
+	children
+	( 
+		#( 
+			p: (($T1 *)$e.p)
+		)
+	)
+}
+
+;------------------------------------------------------------------------------
+;  Nails::AutoArrayPtr
+;------------------------------------------------------------------------------
+
+Nails::AutoArrayPtr<*>{
+	preview
+	( 
+		#(	
+			"AutoArrayPtr ", (($T1 *)$e.p)
+		 )
+	)
+	children
+	( 
+		#( 
+			p: (($T1 *)$e.p) 
+		)
+	)
+}
+
+;------------------------------------------------------------------------------
+;  Nails::CountedPtr
+;------------------------------------------------------------------------------
+
+Nails::CountedPtr<*>{
+	preview
+	( 
+		#(	
+			"CountedPtr ", (($T1 *)$e.p)
+		 )
+	)
+	children
+	( 
+		#( 
+			p: (($T1 *)$e.p) 
+			count: ($e.count) 
+		)
+	)
+}
+
+;------------------------------------------------------------------------------
+;  Nails::CountedArrayPtr
+;------------------------------------------------------------------------------
+
+Nails::CountedArrayPtr<*>{
+	preview
+	( 
+		#(	
+			"CountedArrayPtr ", (($T1 *)$e.p)
+		 )
+	)
+	children
+	( 
+		#( 
+			p: (($T1 *)$e.p)
+			count: ($e.count) 
+		)
+	)
+}
+
+;------------------------------------------------------------------------------
+;  Nails::Array
+;------------------------------------------------------------------------------
+Nails::Array<*>{
+	children
+	(
+		#(
+			data: $e.data,
+			count: $e.count,
+			#array
+			(
+				expr: ($e.data.p)[$i],
+				size: $e.count
+			)
+		)
+	)
+	preview
+	(
+		#(
+			"[", $e.count , "]{",
+			#array
+			(
+				expr: ($e.data.p)[$i],
+				size: $e.count
+			),
+			"}"
+		)
+	)
+}
+
+;------------------------------------------------------------------------------
+;  Nails::ArrayList
+;------------------------------------------------------------------------------
+Nails::ArrayList<*>{
+	children
+	(
+		#(
+			data: $e.data,
+			actualCount: $e.actualCount,
+			#array
+			(
+				expr: ($e.data.p)[$i],
+				size: $e.actualCount
+			)
+		)
+	)
+	preview
+	(
+		#(
+			"[", $e.actualCount , "]{",
+			#array
+			(
+				expr: ($e.data.p)[$i],
+				size: $e.actualCount
+			),
+			"}"
+		)
+	)
+}
+
+[HResult]
