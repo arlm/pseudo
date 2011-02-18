@@ -13,6 +13,8 @@ void TestBasic()
 {
     ArrayList<Byte> data(10);
     
+	*((DWORD*)0) = 0;
+
     TEST_ASSERT(data.get_Count() == 0, L"Length of array should be 0");
     
     for (Int i = 0; i < 10; i++)
